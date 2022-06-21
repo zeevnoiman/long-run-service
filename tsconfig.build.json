@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "long-run-service/node_modules",
+    "../test", "dist", "**/*spec.ts"]
+}
