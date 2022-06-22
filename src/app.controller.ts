@@ -9,4 +9,9 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('/longRun')
+  async getLongRunService(): Promise<string> {
+    return await this.appService.makeLongRun()
+}
 }
